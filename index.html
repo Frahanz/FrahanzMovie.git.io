@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <title>Movie Farhan</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap"
+            rel="stylesheet">
+
+        <style>
+            * {
+                font-family: 'Sedgwick Ave Display', cursive;
+            }
+    .mytitle {
+      width: 100%;
+      height: 250px;
+
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/premium-photo/vibrant-liquid-gradient-background_208978-288.jpg?w=360');
+      background-position: center;
+      background-size: cover;
+
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mytitle>button {
+      width: 200px;
+      height: 50px;
+      font-family: 'Times New Roman', Times, serif;
+
+      background-color: transparent;
+      color: white;
+
+      border-radius: 50px;
+      border: 1px solid white;
+
+      margin-top: 10px;
+    }
+
+    .mytitle>button:hover {
+      border: 2px solid white;
+      cursor: grab;
+    }
+
+    .mycards {
+        margin: 20px auto 0px auto;
+        width: 95%;
+        max-width: 1200px;
+    }
+
+    .mycomment {
+        color: gray;
+    }
+
+    .mypost {
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 0px auto;
+        padding: 20px;
+        color: gray;
+        box-shadow: 0px 0px 3px 0px gray;
+    }
+
+    .mybtn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .mybtn > button {
+        margin-right: 10px;
+    }
+  </style>
+    </head>
+
+    <body>
+        <div class="mytitle">
+            <h1>My favorite movies</h1>
+            <button>Save a new movie</button>
+        </div>
+
+        <div class="mypost">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput"
+                    placeholder="Enter Movie URL">
+                <label for="floatingInput">Movie URL</label>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Stars</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>-- Select A Rating --</option>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control"
+                    placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comment</label>
+            </div>
+            <div class="mybtn">
+                <button type="button" class="btn btn-info">Save</button>
+                <button type="button" class="btn btn-outline-dark">Close</button>
+            </div>
+        </div>
+
+        <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqTEoJUOlTg4HakvM3SHU0a7a3gFpAQ1HrBL21fBAr1OYOeocP"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to
+                                build on the
+                                card title and make up the bulk of the card's
+                                content.</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p class="mycomment">Excellent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://cdn.cgv.id/uploads/movie/compressed/22008500.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to
+                                build on the
+                                card title and make up the bulk of the card's
+                                content.</p>
+                            <p>⭐⭐</p>
+                            <p class="mycomment">Bad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/id/3/3c/Fairy_Tail_Dragon_Cry_Poster.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to
+                                build on the
+                                card title and make up the bulk of the card's
+                                content.</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">Good</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://cdn.cgv.id/uploads/movie/compressed/22032800.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to
+                                build on the
+                                card title and make up the bulk of the card's
+                                content.</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p class="mycomment">Excellent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
